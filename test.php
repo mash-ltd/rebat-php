@@ -1,11 +1,3 @@
-rebat-php
-=========
-
-A PHP driver for rebat-db (fast and scalable weighed property graph database).
-
-test.php is a simple example on how to use the driver:
-
-```php
 <?
 include_once ("RebatDriver.php");
 
@@ -31,5 +23,5 @@ $driver->where(1,"user",2,"page",Relations::Follows);
 
 // print results
 print_r($driver->entries());
+
 ?>
-```
