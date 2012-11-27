@@ -9,6 +9,8 @@ test.php is a simple example on how to use the driver:
 <?
 include_once ("RebatDriver.php");
 
+// You can change the database server and port as follows:
+// $driver = new RebatDriver("localhost","2011");
 $driver = new RebatDriver();
 
 // Empty database
