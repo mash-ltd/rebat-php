@@ -1,7 +1,7 @@
 rebat-php
 =========
 
-A PHP driver for rebat-db (fast and scalable weighed property graph database).
+A PHP driver for rebat-db (fast and scalable weighted property graph database).
 
 test.php is a simple example on how to use the driver:
 
@@ -31,5 +31,21 @@ $driver->where(1,"user",2,"page",Relations::Follows);
 
 // print results
 print_r($driver->entries());
+?>
+```
+
+You can add more relations other than the "Follows" relation by adding them as constants to the file Relations.php
+
+```php
+<?php
+if ( ! class_exists("Relations"))
+{
+  class Relations
+  {
+    // Add other relations you want to support here
+    const Follows = 1;
+    const Joins = 2;
+  }
+}
 ?>
 ```
